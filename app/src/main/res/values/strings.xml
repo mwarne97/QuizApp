@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <!--Text For Header-->
+    <string name="quiz_name">The Simpsons Quiz</string>
+    <string name="question_number_txt_format">Question # %d</string>
+
+    <string name="free_answer_question_reminder">Please press the \'OK\' button after you entered
+    your answer</string>
+
+    <string name="free_answer_landscape_reminder">When in landscape, press \'DONE\' then press \'OK\'
+    after you entered your answer</string>
+
+    <!--Text For All Questions And Answers-->
+
+    <!--Question 1-->
+    <string name="question_1">How many members are there in the immediate Simpson family ?</string>
+    <string name="question_1_image_content_description">Simpson Family</string>
+    <string name="question_1_answer_1">3</string>
+    <string name="question_1_answer_2_correct">6</string>
+    <string name="question_1_answer_3">5</string>
+    <string name="question_1_answer_4">8</string>
+
+    <!--Question 2-->
+    <string name="question_2_part_1">Creator of The Simpsons, Matt Greoning, is known for referencing
+    his other works in the Simpsons.</string>
+    <string name="question_2_part_2">Tick all the shows which he both created and referenced
+    in various Simpsons episodes</string>
+    <string name="question_2_image_content_description">Matt Greoning</string>
+    <string name="question_2_answer_1_correct">Futurama</string>
+    <string name="question_2_answer_2">Family Guy</string>
+    <string name="question_2_answer_3">Bob\'s Burgers</string>
+    <string name="question_2_answer_4_correct">Disenchantment</string>
+    <string name="question_2_answer_5">Rick and Morty</string>
+
+
+    <!--Hint For Edit Text Questions-->
+    <string name="edit_text_hint">Name of Person</string>
+
+    <string name="edit_text_he_is">This is: </string>
+
+    <string name="edit_text_error_message_one">You have a space at the front and end of your answer</string>
+    <string name="edit_text_error_message_two">You have a space at the front of your answer</string>
+    <string name="edit_text_error_message_three">You have a space at the end of your answer</string>
+
+    <!--Question 3-->
+    <string name="question_3">In the fall of 1991, this person signed on as a producer and writer for The Simpsons.
+    They also gave a speech at Harvard University crediting The Simpsons for "saving" him during his career
+    slump.</string>
+    <string name="question_3_edit_text_answer_one">Conan O\'Brien</string>
+    <string name="question_3_edit_text_answer_two">Conan O Brien</string>
+    <string name="question_3_content_description">Popular Talk Show Host</string>
+
+    <!--Question 4-->
+    <string name="question_4">After having made a guest appearance in hit TV show \'Friends\', this person went
+    on to star in The Simpsons as the character Moe Syzlack. They have since gone on to voice most
+    of the characters in the show.</string>
+    <string name="question_4_edit_text_answer">Hank Azaria</string>
+    <string name="question_4_image_content_description">Moe\'s Voice Actor</string>
+
+    <!--Question 5-->
+    <string name="question_5_quote">"' I've had to work hard everyday of my life and what do I have to show for it? This briefcase and this haircut! '"</string>
+    <string name="question_5">Who said this line, and to whom did they say it?</string>
+    <string name="question_5_answer_1_correct">Frank Grimes to Homer</string>
+    <string name="question_5_answer_2">Mr. Burns to Smithers</string>
+    <string name="question_5_answer_3">Selma to Patty</string>
+    <string name="question_5_answer_4">Ned Flanders to Homer</string>
+    <string name="question_5_content_description">Simpson Selfie</string>
+
+    <!--Text For All Buttons-->
+    <string name="answer_button_txt">Answer</string>
+    <string name="ok_button">OK</string>
+
+    <!--Toast Messages-->
+    <string name="confirmation_txt">Answer Entered</string>
+    <string name="score_toast_message">Your Score is: %d out of %d</string>
+</resources>

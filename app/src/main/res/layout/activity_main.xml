@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TheSimpsonsHeaderTitle"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/quiz_name" />
+
+        <!--Question 1 Layout-->
+        <LinearLayout
+            android:id="@+id/question_1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_number_1_header_id"
+                style="@style/QuestionNumberText"
+                tools:text="@string/question_number_txt_format" />
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:contentDescription="@string/question_1_image_content_description"
+                android:scaleType="center"
+                android:src="@drawable/simpson_family" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_1" />
+
+            <RadioGroup
+                android:id="@+id/question_1_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <RadioButton
+                    android:id="@+id/question_1_rb_1"
+                    style="@style/RadioButtonDesign"
+                    android:onClick="questionOneCheckAnswer"
+                    android:text="@string/question_1_answer_1" />
+
+                <RadioButton
+                    android:id="@+id/question_1_rb_2_correct"
+                    style="@style/RadioButtonDesign"
+                    android:onClick="questionOneCheckAnswer"
+                    android:text="@string/question_1_answer_2_correct" />
+
+                <RadioButton
+                    android:id="@+id/question_1_rb_3"
+                    style="@style/RadioButtonDesign"
+                    android:onClick="questionOneCheckAnswer"
+                    android:text="@string/question_1_answer_3" />
+
+                <RadioButton
+                    android:id="@+id/question_1_rb_4"
+                    style="@style/RadioButtonDesign"
+                    android:onClick="questionOneCheckAnswer"
+                    android:text="@string/question_1_answer_4" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <!--End Question 1 Layout-->
+
+        <View style="@style/QuestionSeparatorDesign" />
+
+        <!--Question 2 Layout-->
+        <LinearLayout
+            android:id="@+id/question_2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_number_2_header_id"
+                style="@style/QuestionNumberText"
+                tools:text="@string/question_number_txt_format" />
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:contentDescription="@string/question_2_image_content_description"
+                android:scaleType="center"
+                android:src="@drawable/matt_groening" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_2_part_1" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:layout_marginBottom="15dp"
+                android:text="@string/question_2_part_2" />
+
+            <CheckBox
+                android:id="@+id/question_2_cb_id_1_correct"
+                style="@style/CheckBoxDesign"
+                android:layout_marginTop="10dp"
+                android:onClick="questionTwoCheckAnswer"
+                android:text="@string/question_2_answer_1_correct" />
+
+            <CheckBox
+                android:id="@+id/question_2_cb_id_2"
+                style="@style/CheckBoxDesign"
+                android:onClick="questionTwoCheckAnswer"
+                android:text="@string/question_2_answer_2" />
+
+            <CheckBox
+                android:id="@+id/question_2_cb_id_3"
+                style="@style/CheckBoxDesign"
+                android:onClick="questionTwoCheckAnswer"
+                android:text="@string/question_2_answer_3" />
+
+            <CheckBox
+                android:id="@+id/question_2_cb_id_4_correct"
+                style="@style/CheckBoxDesign"
+                android:onClick="questionTwoCheckAnswer"
+                android:text="@string/question_2_answer_4_correct" />
+
+            <CheckBox
+                android:id="@+id/question_2_cb_id_5"
+                style="@style/CheckBoxDesign"
+                android:onClick="questionTwoCheckAnswer"
+                android:text="@string/question_2_answer_5" />
+
+        </LinearLayout>
+        <!--End Question 2 Layout-->
+
+        <View style="@style/QuestionSeparatorDesign" />
+
+        <!--Question 3 Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_number_3_header_id"
+                style="@style/QuestionNumberText"
+                tools:text="@string/question_number_txt_format" />
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:contentDescription="@string/question_3_content_description"
+                android:scaleType="center"
+                android:src="@drawable/conan_o_brien" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_3" />
+
+            <TextView style="@style/EditTextReminderOneTextStyle" />
+
+            <TextView style="@style/EditTextReminderTwoTextStyle" />
+
+            <LinearLayout style="@style/EditTextLayoutDesign">
+
+                <TextView style="@style/EditTextThisIsStyle" />
+
+                <EditText
+                    android:id="@+id/question_3_edit_text"
+                    style="@style/EditTextDesign" />
+
+                <Button
+                    android:id="@+id/question_3_ok_button"
+                    style="@style/EditTextOKButtonDesign"
+                    android:onClick="questionThreeCheckAnswer" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--End Question 3 Layout-->
+
+        <View style="@style/QuestionSeparatorDesign" />
+
+        <!--Question 4 Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_number_4_header_id"
+                style="@style/QuestionNumberText"
+                tools:text="@string/question_number_txt_format" />
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:contentDescription="@string/question_4_image_content_description"
+                android:scaleType="center"
+                android:src="@drawable/hank_azaria" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_4" />
+
+            <TextView style="@style/EditTextReminderOneTextStyle" />
+
+            <TextView style="@style/EditTextReminderTwoTextStyle" />
+
+            <LinearLayout style="@style/EditTextLayoutDesign">
+
+                <TextView style="@style/EditTextThisIsStyle" />
+
+                <EditText
+                    android:id="@+id/question_4_edit_text"
+                    style="@style/EditTextDesign" />
+
+                <Button
+                    android:id="@+id/question_4_ok_button"
+                    style="@style/EditTextOKButtonDesign"
+                    android:onClick="questionFourCheckAnswer" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--End Question 4 Layout-->
+
+        <View style="@style/QuestionSeparatorDesign" />
+
+        <!--Question 5 Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_number_5_header_id"
+                style="@style/QuestionNumberText"
+                tools:text="@string/question_number_txt_format" />
+
+            <ImageView
+                style="@style/ImageViewStyle"
+                android:contentDescription="@string/question_5_content_description"
+                android:scaleType="center"
+                android:src="@drawable/simpsons_selfie" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_5_quote" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_5" />
+
+            <RadioGroup
+                android:id="@+id/question_5_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/question_5_rb_1_correct"
+                    style="@style/RadioButtonDesign"
+                    android:onClick="questionFiveCheckAnswer"
+                    android:text="@string/question_5_answer_1_correct" />
+
+                <RadioButton
+                    android:id="@+id/question_5_rb_2"
+                    style="@style/RadioButtonDesign"
+                    android:onClick="questionFiveCheckAnswer"
+                    android:text="@string/question_5_answer_2" />
+
+                <RadioButton
+                    android:id="@+id/question_5_rb_3"
+                    style="@style/RadioButtonDesign"
+                    android:onClick="questionFiveCheckAnswer"
+                    android:text="@string/question_5_answer_3" />
+
+                <RadioButton
+                    android:id="@+id/question_5_rb_4"
+                    style="@style/RadioButtonDesign"
+                    android:onClick="questionFiveCheckAnswer"
+                    android:text="@string/question_5_answer_4" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <!--End Question 5 Layout-->
+
+        <View style="@style/QuestionSeparatorDesign" />
+
+        <Button
+            style="@style/AnswerButtonStyle"
+            android:onClick="checkAnswers" />
+
+    </LinearLayout>
+
+</ScrollView>

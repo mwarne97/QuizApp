@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFF400</color>
+    <color name="colorPrimaryDark">#CCC300</color>
+    <color name="colorAccent">#C80000</color>
+
+    <color name="answerButtonColor">#C80000</color>
+</resources>
